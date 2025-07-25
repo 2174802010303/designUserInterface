@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đối tác - Shopee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  border-bottom: 1px solid var(--primary-color);
+  height: 90px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.logo img {
+  width: 64px;
+  height: 62px;
+}
+.header-nav ul {
+  display: flex;
+  gap: 24px;
+}
+.header-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  height: 88px; /* from figma */
+  line-height: 88px;
+}
+.header-nav a:hover {
+  color: var(--primary-color);
+}
+.dropdown-arrow {
+  font-size: 16px;
+  color: var(--text-light);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  overflow: hidden;
+  height: 40px;
+}
+.header-search input {
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 14px;
+  width: 170px;
+  background: transparent;
+}
+.header-search button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-search button img {
+  width: 20px;
+  height: 20px;
+}
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-icon img {
+  width: 24px;
+  height: 24px;
+}
+.cart-icon-wrapper {
+  position: relative;
+}
+.cart-badge {
+  position: absolute;
+  top: -2px;
+  right: -8px;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1;
+  padding: 2px 5px;
+  font-weight: 400;
+}
+
+/* CSS for section section:partners */
+.page-content {
+  padding-bottom: 60px;
+}
+.breadcrumb-section {
+  background-color: #fafafa;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.breadcrumbs-list {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 6px;
+}
+
+.breadcrumbs-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.breadcrumbs-list .separator {
+    color: #6FB048; /* màu xanh lá như trong ảnh */
+    font-weight: bold;
+}
+.main-layout {
+  display: flex;
+  gap: 30px;
+}
+.partners-content {
+  flex: 3;
+}
+.sidebar {
+  flex: 1;
+  min-width: 300px;
+}
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px 20px;
+}
+.partner-card {
+  text-align: center;
+}
+.partner-image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px; /* Approximate height for alignment */
+  margin-bottom: 16px;
+}
+.partner-image-link img {
+  max-height: 100%;
+  object-fit: contain;
+}
+.partner-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-medium);
+  margin-bottom: 8px;
+  min-height: 48px; /* To align titles */
+}
+.partner-card h3 a:hover {
+  color: var(--primary-color);
+}
+.partner-date {
+  font-size: 14px;
+  color: var(--text-light);
+}
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.news-item {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.news-item:last-child {
+  border-bottom: none;
+}
+.news-item img {
+  width: 120px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.news-content h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.news-content h3 a:hover {
+  color: var(--primary-color);
+}
+.news-date {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* CSS for section section:footer */
+.site-footer {
+  background-color: var(--background-white);
+}
+.newsletter-bar {
+  background-color: var(--primary-color);
+  padding: 21px 0;
+}
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+.social-links a {
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links a:hover {
+  border-color: var(--text-white);
+}
+.social-links img {
+  width: 36px;
+  height: 36px;
+}
+.newsletter-container h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-white);
+}
+.newsletter-form {
+  display: flex;
+  height: 38px;
+}
+.newsletter-form input {
+  width: 259px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px 0 0 3px;
+  padding: 0 15px;
+  font-size: 14px;
+  outline: none;
+}
+.newsletter-form button {
+  background-color: #333333;
+  color: var(--text-white);
+  border: none;
+  border-radius: 0 3px 3px 0;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer-main {
+  padding: 50px 0;
+}
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.footer-logo {
+  width: 64px;
+  margin-bottom: 20px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+.contact-info img {
+  width: 20px;
+  margin-top: 2px;
+}
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-links a {
+  font-size: 14px;
+  color: var(--text-medium);
+}
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+.payment-methods {
+  margin-bottom: 20px;
+}
+.bocongthuong-logo {
+  width: 158px;
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container container">
+    <a href="#" class="logo">
+      <img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo">
+    </a>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Tin Sách <span class="dropdown-arrow"></span></a></li>
+        <li><a href="#">Sách Shopee <span class="dropdown-arrow"></span></a></li>
+        <li><a href="#">Tác giả</a></li>
+        <li><a href="#">Cuộc Thi <span class="dropdown-arrow"></span></a></li>
+        <li><a href="#">Về Shopee</a></li>
+        <li><a href="#">Liên hệ <span class="dropdown-arrow"></span></a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="header-search">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit" aria-label="Search">
+          <img src="images/3_3326.svg" alt="Search Icon">
+        </button>
+      </form>
+      <a href="#" class="header-icon" aria-label="Account">
+        <img src="images/3_3331.svg" alt="Account Icon">
+      </a>
+      <!--merged image-->
+      <div class="cart-icon-wrapper">
+        <a href="#" class="header-icon" aria-label="Cart">
+          <img src="images/3_3336.svg" alt="Cart Icon">
+        </a>
+        <span class="cart-badge">0</span>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="page-content">
+  <section class="breadcrumb-section">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumbs-list">
+    <li><a href="#">Trang chủ</a></li>
+    <li class="separator" aria-hidden="true">&gt;</li>
+    <li aria-current="page">Cuộc Thi</li>
+</ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="partners" class="partners-section">
+    <div class="container main-layout">
+      <div class="partners-content">
+        <h1 class="page-title">Đối tác</h1>
+        <div class="partners-grid">
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/d5d4eda069000d65fa3dd5cee3544b90fb202ac1.png" alt="Simon and Schuster"></a>
+            <h3><a href="#">Simon and Schuster</a></h3>
+            <p class="partner-date">Thứ Ba, 26/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/1ca3f0c7fc5ec8f3b5f50e5f32c80c7cac1c393d.png" alt="Pop Up Projects"></a>
+            <h3><a href="#">Pop Up Projects</a></h3>
+            <p class="partner-date">Thứ Ba, 26/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/5e9298e87f0877cdaed79873fd24c5b69d98dec1.png" alt="HarperCollins Publishers"></a>
+            <h3><a href="#">HarperCollins Publishers</a></h3>
+            <p class="partner-date">Thứ Ba, 26/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/23ceda26452fb85abcfa2baf51d69780d5c1313c.png" alt="Viện Goethe Hà Nội"></a>
+            <h3><a href="#">Viện Goethe Hà Nội</a></h3>
+            <p class="partner-date">Thứ Ba, 12/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/057c25dd4d34acf48250de188ee26bc5dc9f6d5e.png" alt="Lotte Department Store Vietnam"></a>
+            <h3><a href="#">Lotte Department Store Vietnam</a></h3>
+            <p class="partner-date">Thứ Năm, 07/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/abfd92c5496e531f2cc22f6bf6ecc76760e52495.png" alt="Penguin Random House"></a>
+            <h3><a href="#">Penguin Random House</a></h3>
+            <p class="partner-date">Thứ Năm, 07/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/25448d3846212a212cd414f11ae376bdb4751c0e.png" alt="Penguin UK"></a>
+            <h3><a href="#">Penguin UK</a></h3>
+            <p class="partner-date">Thứ Năm, 07/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/1ad5080514d649a968b55d9ee81682be7eaf9882.png" alt="DK"></a>
+            <h3><a href="#">DK</a></h3>
+            <p class="partner-date">Thứ Năm, 07/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/f723cce7a3e55bf372aed65fa1eeb821d6abe28f.png" alt="Viện Pháp tại Việt Nam"></a>
+            <h3><a href="#">Viện Pháp tại Việt Nam</a></h3>
+            <p class="partner-date">Thứ Năm, 07/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/624734344a252ceaed06ee093593bb2109fa1c16.png" alt="Japan Foundation"></a>
+            <h3><a href="#">Japan Foundation</a></h3>
+            <p class="partner-date">Thứ Năm, 07/09/2023</p>
+          </article>
+          <article class="partner-card">
+            <a href="#" class="partner-image-link"><img src="images/2664e15ee850a14c64c90bb6781ce39eb802ad93.png" alt="British Council"></a>
+            <h3><a href="#">British Council</a></h3>
+            <p class="partner-date">Thứ Tư, 06/09/2023</p>
+          </article>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <h2 class="sidebar-title">Danh mục tin</h2>
+        <div class="news-list">
+          <article class="news-item">
+            <a href="#"><img src="images/de2ac72173a595f2eeabbcee5bb25949a6c285b7.png" alt="News thumbnail"></a>
+            <div class="news-content">
+              <h3><a href="#">Dấu ấn văn chương Đài Loan</a></h3>
+              <p class="news-date">Thứ Hai, 04/11/2024</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <a href="#"><img src="images/d7debb99020b2e2f95356fd12092d5ac81acc0c8.png" alt="News thumbnail"></a>
+            <div class="news-content">
+              <h3><a href="#">Những phác thảo ngắn về văn học Đài Loan</a></h3>
+              <p class="news-date">Thứ Hai, 04/11/2024</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <a href="#"><img src="images/bc8218567f96351c3fbb1910f7168dced6c539ba.png" alt="News thumbnail"></a>
+            <div class="news-content">
+              <h3><a href="#">Toạ đàm: Văn học Đài Loan đương đại và dấu ấn Ngô Minh Ích</a></h3>
+              <p class="news-date">Thứ Hai, 28/10/2024</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <a href="#"><img src="images/380c449511bc6eea8e9099b5648e3573a2dcad57.png" alt="News thumbnail"></a>
+            <div class="news-content">
+              <h3><a href="#">Shopee TRAO TẶNG HỌC BỔNG CHO THỦ KHOA ĐẦU VÀO KHOA</a></h3>
+              <p class="news-date">Thứ Bảy, 26/10/2024</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <a href="#"><img src="images/78b8c6769624080de8ea1c466d0384e64614d7ef.png" alt="News thumbnail"></a>
+            <div class="news-content">
+              <h3><a href="#">Hội sách shopee chào thu 2024</a></h3>
+              <p class="news-date">Thứ Tư, 23/10/2024</p>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="newsletter-bar">
+    <div class="container newsletter-container">
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><img src="images/0088b23e0db8c0a91b592f0127bd4614bd5c3c3b.png" alt="Facebook"></a>
+        <a href="#" aria-label="Instagram"><img src="images/026a1effd7b959e1a9369808c71ea618ee84669b.png" alt="Instagram"></a>
+        <a href="#" aria-label="Lazada"><img src="images/6898bbeccda7bdef3750c75677d9364cf308a235.png" alt="Lazada"></a>
+        <a href="#" aria-label="Shopee"><img src="images/96d35df635f4a268c9138ea07bc6ada94f569a79.png" alt="Shopee"></a>
+        <a href="#" aria-label="TikTok"><img src="images/253daa23689490678d891b78b35f1f0853773703.png" alt="TikTok"></a>
+      </div>
+      <h4>Nhận thông tin khuyến mãi từ chúng tôi</h4>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Nhận email ưu đãi">
+        <button type="submit">Đăng kí</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="container footer-columns">
+      <div class="footer-col">
+        <a href="#"><img class="footer-logo" src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo"></a>
+        <ul class="contact-info">
+          <li><img src="images/3_3501.svg" alt="Location icon"><span>Số 59, Đỗ Quang, Trung Hoà, Cầu Giấy, Hà Nội.</span></li>
+          <li><img src="images/3_3508.svg" alt="Email icon"><a href="mailto:info@shopee.vn">info@shopee.vn</a></li>
+          <li><img src="images/3_3518.svg" alt="Phone icon"><a href="tel:02435146876">02435146876</a></li>
+          <li><img src="images/3_3525.svg" alt="Mobile icon"><a href="tel:02435146875">02435146875</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Giới thiệu</h4>
+        <ul class="footer-links">
+          <li><a href="#">Về Shopee</a></li>
+          <li><a href="#">Hệ thống hiệu sách</a></li>
+          <li><a href="#">Hệ thống phát hành</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul class="footer-links">
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/ vận chuyển</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Phương thức thanh toán</h4>
+        <img class="payment-methods" src="images/a3dbcaa3f38663a58fd8852aee66a94a1f6d4e4c.png" alt="Payment Methods">
+        <a href="#"><img class="bocongthuong-logo" src="images/c2c60003f2bed57f44ff8a371e0f6ae7c7ab633b.png" alt="Bộ Công Thương"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+@block-end footer
+</body>
+</html>
