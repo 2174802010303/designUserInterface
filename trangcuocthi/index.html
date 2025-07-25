@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang Cuocthi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<!-- Font Awesome is used in the design, you might need to include it. Example: -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+    border-bottom: 1px solid var(--color-primary);
+    height: 90px;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.header__logo img {
+    width: 64px;
+    height: 62px;
+}
+.header__nav ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.header__nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    line-height: 88px; /* from figma */
+    height: 88px;
+}
+.header__nav a.active {
+    color: var(--color-primary);
+}
+.header__nav .dropdown-arrow {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--color-text-muted);
+}
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 30px;
+    overflow: hidden;
+    height: 40px;
+}
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #9e9e9e;
+    width: 180px;
+}
+.search-form button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-form button img {
+    width: 24px;
+    height: 24px;
+}
+.action-icon {
+    position: relative;
+}
+.action-icon img {
+    width: 24px;
+    height: 24px;
+}
+.cart-icon .cart-count {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1;
+    padding: 2px 5px;
+    font-weight: 400;
+}
+@media (max-width: 1200px) {
+    .header__nav {
+        display: none; /* Simple responsive solution: hide nav */
+    }
+}
+@media (max-width: 768px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    .search-form {
+        display: none;
+    }
+}
+
+/* CSS for section section:main */
+.breadcrumbs-section {
+    background-image: url('images/f14aef5a7d338b51510d96da58e2534a815ab0cb.png');
+    background-repeat: repeat;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.breadcrumbs-list {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs-list li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs-list a {
+    color: var(--color-text-base);
+    text-decoration: none;
+}
+
+.breadcrumbs-list .separator {
+    margin: 0 6px;
+    color: var(--color-green);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.main-content-section {
+    padding: 25px 0 60px;
+}
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+}
+.content-area {
+    flex: 1;
+    min-width: 0;
+}
+.page-title {
+    font-size: 27.34px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 30px;
+}
+.page-subtitle {
+    font-size: 16px;
+    color: #212529;
+    margin: 0;
+}
+.sidebar {
+    width: 302px;
+    flex-shrink: 0;
+}
+.sidebar-title {
+    font-size: 19.84px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 20px;
+}
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sidebar-article {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bbbbbf;
+}
+.sidebar-article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.article-image img {
+    width: 120px;
+    height: 76px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.article-content {
+    display: flex;
+    flex-direction: column;
+}
+.article-content h3 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-text-base);
+}
+.article-date {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-top: auto;
+}
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* CSS for section section:newsletter */
+.newsletter-section {
+    background-color: var(--color-primary);
+    padding: 20px 0;
+}
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.social-link {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icon {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 2;
+}
+.social-border {
+    width: 38px;
+    height: 38px;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.newsletter-signup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.signup-title {
+    font-size: 15.75px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0;
+}
+.signup-form {
+    display: flex;
+    height: 38px;
+}
+.signup-form input {
+    width: 259px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px 0 0 3px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: var(--color-text-light);
+    outline: none;
+}
+.signup-form button {
+    width: 84px;
+    background-color: var(--color-text-base);
+    color: var(--color-white);
+    border: none;
+    border-radius: 0 3px 3px 0;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+@media (max-width: 992px) {
+    .newsletter-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .newsletter-signup {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* CSS for section section:footer */
+.site-footer {
+    padding: 40px 0;
+    background-color: var(--color-white);
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo {
+    margin-bottom: 20px;
+}
+.footer-logo img {
+    width: 64px;
+    height: 62px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+.footer-heading {
+    font-size: 15.75px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-links a {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color-text-base);
+}
+.payment-methods {
+    margin-bottom: 20px;
+}
+.payment-methods img {
+    width: 279px;
+}
+.bocongthuong-seal img {
+    width: 158px;
+}
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-column {
+        align-items: center;
+    }
+    .contact-info li {
+        text-align: left;
+    }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-container">
+        <a href="#" class="header__logo">
+            <img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo">
+        </a>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin Sách <span class="dropdown-arrow"></span></a></li>
+                <li><a href="#">Sách Shopee <span class="dropdown-arrow"></span></a></li>
+                <li><a href="#">Tác giả</a></li>
+                <li><a href="#" class="active">Cuộc Thi <span class="dropdown-arrow"></span></a></li>
+                <li><a href="#">Về Shopee</a></li>
+                <li><a href="#">Liên hệ <span class="dropdown-arrow"></span></a></li>
+            </ul>
+        </nav>
+        <div class="header__actions">
+            <form class="search-form">
+                <input type="search" placeholder="Tìm kiếm...">
+                <button type="submit" aria-label="Search">
+                    <img src="images/3_4029.svg" alt="Search Icon">
+                </button>
+            </form>
+            <a href="#" class="action-icon" aria-label="Account">
+                <img src="images/3_4034.svg" alt="Account Icon">
+            </a>
+            <a href="#" class="action-icon cart-icon" aria-label="Cart">
+                <img src="images/3_4039.svg" alt="Cart Icon">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+<main class="page-content">
+    <section class="breadcrumbs-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumbs-list">
+    <li><a href="#">Trang chủ</a></li>
+    <li class="separator" aria-hidden="true">&gt;</li>
+    <li aria-current="page">Cuộc Thi</li>
+</ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="main-content-section">
+        <div class="container content-wrapper">
+            <div class="content-area">
+                <h1 class="page-title">Cuộc Thi</h1>
+                <p class="page-subtitle">Danh mục này đang cập nhật bài viết</p>
+            </div>
+            <aside class="sidebar">
+                <h2 class="sidebar-title">DANH MỤC TIN</h2>
+                <div class="articles-list">
+                    <article class="sidebar-article">
+                        <a href="#" class="article-image">
+                            <img src="images/de2ac72173a595f2eeabbcee5bb25949a6c285b7.png" alt="Dấu ấn văn chương Đài Loan">
+                        </a>
+                        <div class="article-content">
+                            <h3><a href="#">Dấu ấn văn chương Đài Loan</a></h3>
+                            <p class="article-date">Thứ Hai, 04/11/2024</p>
+                        </div>
+                    </article>
+                    <article class="sidebar-article">
+                        <a href="#" class="article-image">
+                            <img src="images/bc8218567f96351c3fbb1910f7168dced6c539ba.png" alt="Văn học Đài Loan đương đại">
+                        </a>
+                        <div class="article-content">
+                            <h3><a href="#">Toạ đàm: Văn học Đài Loan đương đại và dấu ấn Ngô Minh Ích</a></h3>
+                            <p class="article-date">Thứ Hai, 28/10/2024</p>
+                        </div>
+                    </article>
+                    <article class="sidebar-article">
+                        <a href="#" class="article-image">
+                            <img src="images/380c449511bc6eea8e9099b5648e3573a2dcad57.png" alt="Học bổng thủ khoa">
+                        </a>
+                        <div class="article-content">
+                            <h3><a href="#">Shopee TRAO TẶNG HỌC BỔNG CHO THỦ KHOA ĐẦU VÀO KHOA</a></h3>
+                            <p class="article-date">Thứ Bảy, 26/10/2024</p>
+                        </div>
+                    </article>
+                    <article class="sidebar-article">
+                        <a href="#" class="article-image">
+                            <img src="images/78b8c6769624080de8ea1c466d0384e64614d7ef.png" alt="Hội sách Shopee">
+                        </a>
+                        <div class="article-content">
+                            <h3><a href="#">Hội sách Shopee chào thu 2024</a></h3>
+                            <p class="article-date">Thứ Tư, 23/10/2024</p>
+                        </div>
+                    </article>
+                    <article class="sidebar-article">
+                        <a href="#" class="article-image">
+                            <img src="images/50b714c727479d6cfb4cf532f0a684c7cc9f276c.png" alt="Những lá thư từ hậu phương">
+                        </a>
+                        <div class="article-content">
+                            <h3><a href="#">Giao lưu - Toạ đàm: NHỮNG LÁ THƯ TỪ HẬU PHƯƠNG về cuốn sách</a></h3>
+                            <p class="article-date">Thứ Tư, 23/10/2024</p>
+                        </div>
+                    </article>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+<section class="newsletter-section">
+    <div class="container newsletter-container">
+        <div class="social-links">
+            <!--merged image-->
+            <a href="#" class="social-link" aria-label="Facebook">
+                <img class="social-icon" src="images/0088b23e0db8c0a91b592f0127bd4614bd5c3c3b.png" alt="Facebook">
+                <div class="social-border"></div>
+            </a>
+            <!--merged image-->
+            <a href="#" class="social-link" aria-label="Instagram">
+                <img class="social-icon" src="images/026a1effd7b959e1a9369808c71ea618ee84669b.png" alt="Instagram">
+                <div class="social-border"></div>
+            </a>
+            <!--merged image-->
+            <a href="#" class="social-link" aria-label="Lazada">
+                <img class="social-icon" src="images/6898bbeccda7bdef3750c75677d9364cf308a235.png" alt="Lazada">
+                <div class="social-border"></div>
+            </a>
+            <!--merged image-->
+            <a href="#" class="social-link" aria-label="Shopee">
+                <img class="social-icon" src="images/96d35df635f4a268c9138ea07bc6ada94f569a79.png" alt="Shopee">
+                <div class="social-border"></div>
+            </a>
+            <!--merged image-->
+            <a href="#" class="social-link" aria-label="Tiktok">
+                <img class="social-icon" src="images/253daa23689490678d891b78b35f1f0853773703.png" alt="Tiktok">
+                <div class="social-border"></div>
+            </a>
+        </div>
+        <div class="newsletter-signup">
+            <p class="signup-title">Nhận thông tin khuyến mãi từ chúng tôi</p>
+            <form class="signup-form">
+                <input type="email" placeholder="Nhận email ưu đãi">
+                <button type="submit">Đăng kí</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-column">
+            <a href="#" class="footer-logo">
+                <img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo">
+            </a>
+            <ul class="contact-info">
+                <li>
+                    <img src="images/3_3880.svg" alt="Location icon">
+                    <span>Số 59, Đỗ Quang, Trung Hoà, Cầu Giấy, Hà Nội.</span>
+                </li>
+                <li>
+                    <img src="images/3_3887.svg" alt="Email icon">
+                    <a href="mailto:info@shopee.vn">info@shopee.vn</a>
+                </li>
+                <li>
+                    <img src="images/3_3897.svg" alt="Phone icon">
+                    <a href="tel:02435146876">02435146876</a>
+                </li>
+                <li>
+                    <img src="images/3_3904.svg" alt="Mobile icon">
+                    <a href="tel:02435146875">02435146875</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-heading">Giới thiệu</h4>
+            <ul class="footer-links">
+                <li><a href="#">Về Shopee</a></li>
+                <li><a href="#">Hệ thống hiệu sách</a></li>
+                <li><a href="#">Hệ thống phát hành</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Liên hệ với chúng tôi</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-heading">CHÍNH SÁCH</h4>
+            <ul class="footer-links">
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+                <li><a href="#">Chính sách thanh toán/ vận chuyển</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-heading">Phương thức thanh toán</h4>
+            <div class="payment-methods">
+                <img src="images/a3dbcaa3f38663a58fd8852aee66a94a1f6d4e4c.png" alt="Payment Methods">
+            </div>
+            <a href="#" class="bocongthuong-seal">
+                <img src="images/c2c60003f2bed57f44ff8a371e0f6ae7c7ab633b.png" alt="Bộ Công Thương seal">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
