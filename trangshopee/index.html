@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Về Shopee - Trang Shopee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0 1rem;
+    height: 90px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .logo-image {
+    width: 64px;
+    height: 62px;
+  }
+  .main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .main-nav li a {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #151515;
+    gap: 6px;
+  }
+  .main-nav li a.active,
+  .main-nav li a:hover {
+    color: var(--primary-color);
+  }
+  .dropdown-arrow {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: #7b7b7d;
+  }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .search-form {
+    display: flex;
+    border: 1px solid #bbbbbf;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 40px;
+  }
+  .search-input {
+    border: none;
+    padding: 0 15px;
+    font-size: 14px;
+    width: 180px;
+    outline: none;
+  }
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-button img {
+    width: 24px;
+    height: 24px;
+  }
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .action-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  .cart-icon {
+    position: relative;
+  }
+  .cart-count {
+    position: absolute;
+    top: -2px;
+    right: -8px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1;
+    padding: 2px 5px;
+    font-weight: 400;
+  }
+
+  @media (max-width: 1200px) {
+    .main-nav {
+      display: none; /* Simple hide for mobile, real implementation would use a hamburger menu */
+    }
+  }
+  @media (max-width: 768px) {
+    .header-container {
+      justify-content: space-between;
+    }
+    .search-form {
+      display: none;
+    }
+  }
+
+/* CSS for section section:main */
+.breadcrumb-section {
+    background-image: url('images/f14aef5a7d338b51510d96da58e2534a815ab0cb.png');
+    background-repeat: repeat;
+    height: 55px;
+    display: flex;
+    align-items: center;
+  }
+  .breadcrumbs {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  gap: 6px;
+}
+.breadcrumbs {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f1f9f1; /* nền nhạt như ảnh */
+  padding: 10px 15px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.breadcrumbs .separator {
+  margin: 0 6px;
+  color: #6FB048;
+  font-weight: bold;
+}
+
+.breadcrumbs .current {
+  color: #6FB048;
+  font-weight: bold;
+}
+
+  .about-section {
+    padding: 40px 0;
+  }
+  .about-article {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  .about-article h1 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+  }
+  .about-banner {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .about-article p {
+    margin: 0 0 24px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-color-dark);
+  }
+  .awards-section {
+    margin-top: 40px;
+  }
+  .awards-section h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .awards-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .awards-section h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .awards-section ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .awards-section ul li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  .separator {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+/* CSS for section section:footer */
+.site-footer {
+    background-color: var(--background-color);
+    color: var(--text-color-medium);
+  }
+  .newsletter-bar {
+    background-color: var(--primary-color);
+    padding: 21px 0;
+  }
+  .newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social-links ul {
+    display: flex;
+    gap: 18px;
+  }
+  .social-link-item {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    display: block;
+  }
+  .social-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+  }
+  .social-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .newsletter-signup {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .newsletter-signup h4 {
+    color: var(--background-color);
+    font-size: 15.75px;
+    font-weight: 700;
+  }
+  .newsletter-form {
+    display: flex;
+  }
+  .newsletter-input {
+    width: 259px;
+    height: 38px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px 0 0 3px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: var(--text-color-light);
+  }
+  .newsletter-input::placeholder {
+    color: var(--text-color-light);
+  }
+  .newsletter-button {
+    height: 38px;
+    background-color: #333333;
+    color: var(--background-color);
+    border: none;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+  }
+  .footer-main {
+    padding: 55px 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .footer-column h4 {
+    color: var(--primary-color);
+    font-size: 15.75px;
+    margin-bottom: 35px;
+  }
+  .footer-logo {
+    margin-bottom: 18px;
+    width: 64px;
+  }
+  .contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .contact-info li img {
+    width: 20px;
+    margin-top: 2px;
+  }
+  .footer-links li {
+    margin-bottom: 18px;
+  }
+  .footer-links a {
+    font-size: 14px;
+    color: var(--text-color-medium);
+  }
+  .footer-links a:hover {
+    color: var(--primary-color);
+  }
+  .payment-methods {
+    margin-bottom: 20px;
+  }
+  .bocongthuong-img {
+    width: 158px;
+  }
+
+  @media (max-width: 1024px) {
+    .newsletter-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .newsletter-signup {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header id="section-header" class="site-header">
+  <div class="container header-container">
+    <a href="#" class="logo-link">
+      <img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo" class="logo-image">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Tin Sách <span class="dropdown-arrow"></span></a></li>
+        <li><a href="#">Sách shopee <span class="dropdown-arrow"></span></a></li>
+        <li><a href="#">Tác giả</a></li>
+        <li><a href="#">Cuộc Thi <span class="dropdown-arrow"></span></a></li>
+        <li><a href="#" class="active">Về shopee</a></li>
+        <li><a href="#">Liên hệ <span class="dropdown-arrow"></span></a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form">
+        <input type="search" placeholder="Tìm kiếm..." class="search-input">
+        <button type="submit" class="search-button">
+          <img src="images/3_4168.svg" alt="Search Icon">
+        </button>
+      </form>
+      <div class="user-actions">
+        <a href="#" class="action-icon">
+          <img src="images/3_4173.svg" alt="Account Icon">
+        </a>
+        <a href="#" class="action-icon cart-icon">
+          <img src="images/3_4178.svg" alt="Cart Icon">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="section-main">
+  <section class="breadcrumb-section">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumbs">
+  <li><a href="#">Trang chủ</a></li>
+  <li class="separator">&gt;</li>
+  <li class="current">Cuộc thi</li>
+</ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <article class="about-article">
+        <h1>Về Shopee</h1>
+        <img src="images/f07bcabdf3ab0e623ff4830e7e105a9c59e6c582.png" alt="Shopee office team" class="about-banner">
+        
+        <p>Ngay từ cuốn sách đầu tiên, độc giả đã dành sự quan tâm và yêu mến cho một thương hiệu sách mới mẻ mang trong mình khát vọng góp phần tạo lập diện mạo mới cho xuất bản văn học tại Việt Nam.</p>
+        <p>Sau thành công vang dội của <i>Nhật ký Đặng Thùy Trâm</i> với gần 500,000 bản sách được phát hành, phá mọi kỷ lục về xuất bản trước đó, kéo theo một loạt những hiệu ứng xã hội và dư luận có ý nghĩa, Shopee đã không ngừng giới thiệu với độc giả Việt Nam những cuốn sách văn học nước ngoài giá trị, thu hút nhiều tầng lớp độc giả.</p>
+        <p>Sách của Shopee nổi bật bởi nội dung văn học tinh tế, bởi vẻ đẹp của thiết kế tinh tế, bởi sự chăm chút kỹ lưỡng cho mỗi cuốn sách.</p>
+        <p>Shopee, trên thực tế, đã trở thành một người bạn tinh thần, người định hướng đọc sách cho rất nhiều bạn trẻ, là cầu nối giữa độc giả Việt Nam với nền văn hóa đọc mênh mông của thế giới.</p>
+        <p>Song song với dòng sách văn học vốn là thế mạnh, với sự trưởng thành mạnh mẽ của tổ chức, Shopee đã mở rộng sự quan tâm sang các mảng sách non-fiction như lịch sử, triết học, khoa học, sách về các vấn đề xã hội, văn hóa đương đại, sách khai trí, tham khảo, triết lý sống... Trong lĩnh vực này, Shopee đã trở thành nhà xuất bản của những tác gia quan trọng trên thị trường xuất bản thế giới hiện nay: Đức Đạt Lai Lạt Ma, Deepak Chopra, Don Miguel Ruiz, Naomi Klein, Elisabeth Gilbert...</p>
+        <p>Công ty Cổ phần Văn hóa và Truyền thông Shopee đã được trao nhiều danh hiệu và giải thưởng như:</p>
+
+        <div class="awards-section">
+          <h2>GIẢI THƯỞNG CHO DOANH NGHIỆP</h2>
+          <ul>
+            <li>2016: Bằng khen của Bộ trưởng Bộ TT&TT cho tập thể đạt thành tích xuất sắc trong phong trào thi đua trong lĩnh vực xuất bản in và phát hành.</li>
+          </ul>
+
+          <h2>GIẢI THƯỞNG CHO CÁ NHÂN</h2>
+          <ul>
+            <li>2018: Ngài Étienne Rolland-Piègue, Tham tán hợp tác và hoạt động văn hóa Đại sứ quán Pháp tại Việt Nam, đã trao tặng Huân chương Hiệp sĩ Văn học và Nghệ thuật cho ông Nguyễn Nhật Anh, Tổng Giám đốc Công ty Cổ phần Văn hóa và Truyền thông shopee.</li>
+          </ul>
+
+          <h2>GIẢI THƯỞNG CHO SÁCH</h2>
+          
+          <h3>Giải Sách Hay</h3>
+          <h4>2012</h4>
+          <ul>
+            <li>Hạng mục Thiếu nhi: Chuyện con mèo dạy hải âu bay (Luis Sepúlveda, do Phương Huyên dịch).</li>
+          </ul>
+          <h4>2013</h4>
+          <ul>
+            <li>Hạng mục Thiếu nhi: Tottochan bên cửa sổ (Tetsuko Kuroyanagi, do Anh Thư dịch).</li>
+          </ul>
+          <h4>2014</h4>
+          <ul>
+            <li>Hạng mục Thiếu nhi: Bộ sách Nhóc Nicolas (Goscinny - Sempé, do Trác Phong, Hương Lan, Tố Châu dịch).</li>
+            <li>Hạng mục Văn học: Bắt trẻ đồng xanh (J. D. Salinger, do Phùng Khánh dịch).</li>
+            <li>Hạng mục Phát hiện mới: Ngàn năm áo mũ (Trần Quang Đức).</li>
+          </ul>
+          
+          <h3>Giải Sách Quốc gia</h3>
+          <h4>2020</h4>
+          <ul>
+            <li>Giải C: Bộ sách Giáo dục đa giác quan (4 cuốn): Ú òa, sa mạc và nước xiết; Ú òa, rừng rậm và tuyết phủ; Ái chà, kỳ thú rừng xanh; Ái chà, bí mật vườn nhà. Tác giả: Pavla Hanácková. Minh họa: Linh Dao, Irene Gough. Người dịch: Hoàng My. NXB Hà Nội và Công ty Văn hóa và Truyền thông shopee liên kết xuất bản.</li>
+          </ul>
+          <h4>2021</h4>
+          <ul>
+            <li>Giải B: Tập thơ Bài thơ của một người yêu nước mình. Tác giả: Trần Vàng Sao. NXB Hà Nội và Công ty Văn hóa và Truyền thông shopee liên kết xuất bản.</li>
+            <li>Giải B: Nghệ thuật Huế. Tác giả: Léopold Cadière. NXB Thế giới và Công ty Văn hóa và Truyền thông shopee liên kết xuất bản.</li>
+          </ul>
+
+          <h3>Giải thưởng của Hội Nhà văn Việt Nam</h3>
+          <ul>
+            <li>Giải Văn học dịch, năm 2005: Cuộc đời của Pi (Yann Martel, do Trịnh Lữ dịch).</li>
+            <li>Giải Văn học dịch, năm 2008: Tên tôi là Đỏ (Orhan Pamuk, do Phạm Viêm Phương và Huỳnh Kim Anh dịch).</li>
+            <li>Giải Văn học dịch, năm 2016: Lâu đài sói (Hilary Mantel, do Nguyễn Chí Hoan dịch).</li>
+          </ul>
+
+          <h3>Giải thưởng của Hội Nhà văn Hà Nội</h3>
+          <ul>
+            <li>Giải Văn học dịch, năm 2003-2004: Cuộc đời của Pi (Yann Martel, do Trịnh Lữ dịch).</li>
+            <li>Giải Thơ, năm 2007: Gửi V.B (Phan Thị Vàng Anh).</li>
+            <li>Giải Văn học dịch, năm 2007: Biên niên ký chim vặn dây cót (Haruki Murakami, do Trần Tiễn Cao Đăng dịch).</li>
+            <li>Giải Văn học dịch, năm 2008: Nửa kia của Hitler (Éric-Emmanuel Schmitt, do Nguyễn Đình Thành dịch).</li>
+            <li>Giải Thành tựu trọn đời về thơ, năm 2008: Trần Dần - Thơ.</li>
+            <li>Giải Văn học dịch, năm 2020: 2666 (Roberto Bolaño, do Trần Tiễn Cao Đăng và Quân Khuê dịch).</li>
+          </ul>
+        </div>
+
+        <p class="separator">***</p>
+        <p>Hiểu thời đại đang sống thông qua sách, song hành với những biến chuyển sâu sắc trong lòng xã hội bằng những hoạt động xuất bản miệt mài và quả cảm, con đường shopee đã chọn để đi sẽ còn dài. Nhiều khó khăn, thử thách đang ở phía trước. Bước qua thời kỳ sơ khai với những bài học và những kinh nghiệm đầu tiên, shopee giờ đã sẵn sàng cho một chặng đường phát triển mới. Và chúng tôi muốn hoàn thiện mình trong sự cầu thị và cẩn trọng. Tất cả vì một gia sản sách to lớn, có sức sống dài lâu, có ý nghĩa với nhiều thế hệ bạn đọc.</p>
+      </article>
+    </div>
+  </section>
+</main>
+<footer id="section-footer" class="site-footer">
+  <div class="newsletter-bar">
+    <div class="container newsletter-container">
+      <!--merged image-->
+      <div class="social-links">
+        <ul>
+          <li>
+            <a href="#" class="social-link-item">
+              <img src="images/0088b23e0db8c0a91b592f0127bd4614bd5c3c3b.png" alt="Facebook" class="social-icon">
+              <div class="social-border"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-item">
+              <img src="images/026a1effd7b959e1a9369808c71ea618ee84669b.png" alt="Instagram" class="social-icon">
+              <div class="social-border"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-item">
+              <img src="images/6898bbeccda7bdef3750c75677d9364cf308a235.png" alt="Lazada" class="social-icon">
+              <div class="social-border"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-item">
+              <img src="images/96d35df635f4a268c9138ea07bc6ada94f569a79.png" alt="Shopee" class="social-icon">
+              <div class="social-border"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-item">
+              <img src="images/253daa23689490678d891b78b35f1f0853773703.png" alt="Tiktok" class="social-icon">
+              <div class="social-border"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter-signup">
+        <h4>Nhận thông tin khuyến mãi từ chúng tôi</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Nhận email ưu đãi" class="newsletter-input">
+          <button type="submit" class="newsletter-button">Đăng kí</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-column">
+        <a href="#"><img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo" class="footer-logo"></a>
+        <ul class="contact-info">
+          <li>
+            <img src="images/3_4074.svg" alt="location icon">
+            <span>Số 59, Đỗ Quang, Trung Hoà, Cầu Giấy, Hà Nội.</span>
+          </li>
+          <li>
+            <img src="images/3_4081.svg" alt="email icon">
+            <a href="mailto:info@shopee.vn">info@shopee.vn</a>
+          </li>
+          <li>
+            <img src="images/3_4091.svg" alt="phone icon">
+            <a href="tel:02435146876">02435146876</a>
+          </li>
+          <li>
+            <img src="images/3_4098.svg" alt="mobile icon">
+            <a href="tel:02435146875">02435146875</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Giới thiệu</h4>
+        <ul class="footer-links">
+          <li><a href="#">Về Shopee</a></li>
+          <li><a href="#">Hệ thống hiệu sách</a></li>
+          <li><a href="#">Hệ thống phát hành</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>CHÍNH SÁCH</h4>
+        <ul class="footer-links">
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/ vận chuyển</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Phương thức thanh toán</h4>
+        <img src="images/a3dbcaa3f38663a58fd8852aee66a94a1f6d4e4c.png" alt="Payment Methods" class="payment-methods">
+        <a href="#"><img src="images/c2c60003f2bed57f44ff8a371e0f6ae7c7ab633b.png" alt="Bộ Công Thương" class="bocongthuong-img"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
