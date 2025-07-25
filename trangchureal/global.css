@@ -1,0 +1,117 @@
+:root {
+  --primary-color: #ee4d2d;
+  --text-dark: #151515;
+  --text-light: #333333;
+  --text-gray: #7b7b7d;
+  --background-white: #ffffff;
+  --border-color: #bbbbbf;
+  --border-color-light: #ebebeb;
+  --background-light-gray: #f4f4f4;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: var(--background-white);
+  color: var(--text-light);
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.view-more-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.carousel-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .carousel-nav {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f5f5f5;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-nav.prev {
+    left: -45px;
+  }
+  .carousel-nav.next {
+    right: -45px;
+  }
+  .carousel-nav:hover {
+    opacity: 0.8;
+  }
+}

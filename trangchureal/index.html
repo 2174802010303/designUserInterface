@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang Chu Real</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<!-- Font Awesome is used for icons like ''. A CDN link is added for demonstration. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  border-bottom: 1px solid var(--border-color-light);
+  padding: 10px 0;
+  background-color: var(--background-white);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.logo img {
+  height: 62px;
+  width: auto;
+}
+.main-nav ul {
+  display: flex;
+  gap: 25px;
+}
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 88px;
+  white-space: nowrap;
+}
+.main-nav a.active {
+  color: var(--primary-color);
+}
+.main-nav a:hover {
+  color: var(--primary-color);
+}
+.main-nav .fa-chevron-down {
+  font-size: 12px;
+  color: var(--text-gray);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.search-form input {
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  outline: none;
+  width: 150px;
+}
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+}
+.action-icon {
+  position: relative;
+}
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: var(--primary-color);
+  color: var(--background-white);
+  font-size: 12px;
+  line-height: 1;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .main-nav { display: none; } /* Simple hide for mobile, would need JS for hamburger */
+}
+@media (max-width: 768px) {
+  .header-container { flex-wrap: wrap; }
+  .search-form { width: 100%; order: 3; margin-top: 10px; }
+  .search-form input { width: 100%; }
+  .logo { order: 1; }
+  .header-actions { order: 2; }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  padding: 30px 0 50px;
+  background-image: url('images/18883b56b9099240724355f261b604c71aadc0c2.png');
+  background-size: cover;
+  background-position: center;
+}
+.hero-container {
+  display: flex;
+  gap: 20px;
+}
+.hero-main {
+  flex: 2;
+  min-width: 0;
+}
+.hero-article {
+  background-color: var(--background-white);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.hero-article-content {
+  padding: 10px 20px 17px;
+}
+.hero-article-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+.hero-article-content time {
+  font-size: 14px;
+  color: var(--text-gray);
+}
+.hero-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+.sidebar-article {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+.sidebar-article:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.sidebar-article-img {
+  flex-shrink: 0;
+}
+.sidebar-article-img img {
+  width: 196px;
+  height: 125px;
+  object-fit: cover;
+}
+.sidebar-article-content {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-article-content h4 {
+  margin: 0 0 11px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text-light);
+}
+.sidebar-article-content time {
+  font-size: 14px;
+  color: var(--text-gray);
+  margin-top: auto;
+}
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+  }
+}
+
+/* CSS for section section:authors */
+.authors-section {
+  padding: 30px 0;
+}
+.author-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: calc(100% / 6); /* Show 6 items on desktop */
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.author-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--background-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.author-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-light);
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .author-item { width: calc(100% / 4); }
+}
+@media (max-width: 768px) {
+  .author-item { width: calc(100% / 3); }
+}
+@media (max-width: 576px) {
+  .author-item { width: calc(100% / 2); }
+}
+
+/* CSS for section section:new-books */
+.new-books-section {
+  padding: 30px 0;
+}
+.book-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: calc(100% / 5); /* Show 5 items on desktop */
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.book-cover {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 245px;
+}
+.book-cover img {
+  max-height: 100%;
+  width: auto;
+}
+.book-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-light);
+  margin: 0 0 10px 0;
+  height: 40px; /* Fixed height for 2 lines */
+  overflow: hidden;
+}
+.book-price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: auto;
+}
+.current-price {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.original-price {
+  font-size: 14px;
+  color: #777777;
+  text-decoration: line-through;
+}
+@media (max-width: 1200px) {
+  .book-card { width: calc(100% / 4); }
+}
+@media (max-width: 992px) {
+  .book-card { width: calc(100% / 3); }
+}
+@media (max-width: 576px) {
+  .book-card { width: calc(100% / 2); }
+}
+
+/* CSS for section section:about */
+.about-section {
+  padding: 80px 0 50px;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.about-content {
+  flex: 1;
+}
+.about-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+.about-subtitle {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin: 3px 0 16px 0;
+}
+.about-description {
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--text-dark);
+  margin: 0 0 38px 0;
+}
+.about-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--background-white);
+  padding: 12px 53px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.about-image {
+  flex: 1;
+}
+.about-image img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+/* CSS for section section:coming-soon */
+.coming-soon-section {
+  padding: 30px 0;
+}
+.contact-price {
+  font-size: 18px !important;
+}
+
+/* CSS for section section:press */
+.press-section {
+  padding: 30px 0;
+}
+.press-article {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: calc(100% / 3); /* Show 3 items on desktop */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.press-article img {
+  border-radius: 5px;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.press-article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.press-article-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-light);
+  margin: 0;
+}
+.press-article-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3f3f40;
+  margin: 0;
+}
+.press-article-content time {
+  font-size: 14px;
+  color: var(--text-gray);
+}
+@media (max-width: 992px) {
+  .press-article { width: calc(100% / 2); }
+}
+@media (max-width: 576px) {
+  .press-article { width: 100%; }
+}
+
+/* CSS for section section:partners */
+.partners-section {
+  padding: 30px 0;
+}
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: calc(100% / 6);
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.partner-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--background-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner-logo img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+.partner-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-light);
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+}
+@media (max-width: 1200px) {
+  .partner-item { width: calc(100% / 4); }
+}
+@media (max-width: 768px) {
+  .partner-item { width: calc(100% / 3); }
+}
+@media (max-width: 576px) {
+  .partner-item { width: calc(100% / 2); }
+}
+
+/* CSS for section section:footer */
+.site-footer {
+  background-color: var(--background-white);
+}
+.footer-newsletter {
+  background-color: var(--primary-color);
+  padding: 22px 0;
+}
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+.social-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.social-icon img {
+  width: 100%;
+  height: 100%;
+}
+.newsletter-signup {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.newsletter-signup h4 {
+  color: var(--background-white);
+  font-size: 15.75px;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+}
+.newsletter-form {
+  display: flex;
+  position: relative;
+  width: 343px;
+}
+.newsletter-form input {
+  flex-grow: 1;
+  border: 1px solid var(--border-color-light);
+  border-radius: 3px;
+  padding: 8px 15px;
+  font-size: 14px;
+  outline: none;
+}
+.newsletter-form button {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  background-color: #333333;
+  color: var(--background-white);
+  border: none;
+  border-radius: 0 2px 2px 0;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer-main {
+  padding: 34px 0;
+}
+.footer-main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.footer-column {
+  padding: 0 10px;
+}
+.footer-logo {
+  height: 62px;
+  width: auto;
+  margin-bottom: 20px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.contact-info img {
+  width: 20px;
+  margin-top: 2px;
+}
+.footer-heading {
+  font-size: 15.75px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 16px 0;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-links a {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.payment-methods {
+  margin-bottom: 16px;
+}
+.bocongthuong-img {
+  width: 158px;
+}
+
+@media (max-width: 1200px) {
+  .footer-main-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .newsletter-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-main-container {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-form {
+    width: 100%;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container container">
+    <a href="#" class="logo">
+      <img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Logo">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#" class="active">Trang chủ</a></li>
+        <li><a href="#">Tin Sách <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#"> Sách Shoppe <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#">Tác giả</a></li>
+        <li><a href="#">Cuộc Thi <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#">Về Shoppe</a></li>
+        <li><a href="#">Liên hệ <i class="fas fa-chevron-down"></i></a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form">
+        <input type="search" placeholder="Tìm kiếm...">
+        <button type="submit">
+          <img src="images/3_979.svg" alt="Search Icon">
+        </button>
+      </form>
+      <a href="#" class="action-icon">
+        <img src="images/3_984.svg" alt="Account Icon">
+      </a>
+      <a href="#" class="action-icon cart-icon">
+        <img src="images/3_989.svg" alt="Cart Icon">
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+<section id="hero" class="hero-section">
+  <div class="container hero-container">
+    <div class="hero-main">
+      <article class="hero-article">
+        <a href="#">
+          <img src="images/78b8c6769624080de8ea1c466d0384e64614d7ef.png" alt="Hội sách Shoppe chào thu 2024">
+        </a>
+        <div class="hero-article-content">
+          <h3><a href="#">Hội Shoppe chào thu 2024</a></h3>
+          <time datetime="2024-10-23">Thứ Tư, 23/10/2024</time>
+        </div>
+      </article>
+    </div>
+    <aside class="hero-sidebar">
+      <article class="sidebar-article">
+        <a href="#" class="sidebar-article-img">
+          <img src="images/afff1189e854ce6c1384574c5b779ac3a755d307.png" alt="ECONOMIX">
+        </a>
+        <div class="sidebar-article-content">
+          <h4><a href="#">KHÔNG CẦN PHẢI LÀ NHÀ KINH TẾ HỌC MỚI ĐỌC ĐƯỢC ECONOMIX</a></h4>
+          <time datetime="2025-06-15">Thứ Năm, 15/06/2025</time>
+        </div>
+      </article>
+      <article class="sidebar-article">
+        <a href="#" class="sidebar-article-img">
+          <img src="images/6a8596421f1db14d864fd3fa60a25d82c60b3c18.png" alt="BẮT TRẺ ĐỒNG XANH">
+        </a>
+        <div class="sidebar-article-content">
+          <h4><a href="#">“BẮT TRẺ ĐỒNG XANH” KHÔNG PHẢI “CÚ HIT” ĐẦU TIÊN CỦA SALINGER</a></h4>
+          <time datetime="15/06/2025">Thứ Năm, 15/06/2025</time>
+        </div>
+      </article>
+      <article class="sidebar-article">
+        <a href="#" class="sidebar-article-img">
+          <img src="images/bc0416671db9055d9691e5feda18a4eef9a69e84.png" alt="Tên của đoá hồng">
+        </a>
+        <div class="sidebar-article-content">
+          <h4><a href="#">Tên của đoá hồng: Kho tàng kiến thức về triết học, lý luận, tôn giáo, lịch</a></h4>
+          <time datetime="15/06/2025">Thứ Bảy, 15/06/2025</time>
+        </div>
+      </article>
+      <article class="sidebar-article">
+        <a href="#" class="sidebar-article-img">
+          <img src="images/ecfdc700ea118792fb4556c70a540b352d7f95a5.png" alt="5 bí quyết dưỡng ẩm">
+        </a>
+        <div class="sidebar-article-content">
+          <h4><a href="#">5 bí quyết dưỡng ẩm đắt giá - Chăm sóc da hiệu quả ngay trong mùa</a></h4>
+          <time datetime="2023-11-20">Thứ Hai, 20/11/2023</time>
+        </div>
+      </article>
+    </aside>
+  </div>
+</section>
+<section id="authors" class="authors-section">
+  <div class="container">
+    <div class="section-title-container">
+      <h2 class="section-title">Các tác giả</h2>
+      <a href="#" class="view-more-link">Xem thêm <img src="images/3_1182.svg" alt="arrow icon"></a>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-item author-item">
+          <a href="#" class="author-avatar">
+            <img src="images/557d6740c0298cf45fe22bb13c65844b5d1823e8.png" alt="Kolya Bùi">
+          </a>
+          <h3 class="author-name"><a href="#">Kolya Bùi</a></h3>
+        </div>
+        <div class="carousel-item author-item">
+          <a href="#" class="author-avatar">
+            <img src="images/557d6740c0298cf45fe22bb13c65844b5d1823e8.png" alt="Ngọ Diệp">
+          </a>
+          <h3 class="author-name"><a href="#">Ngọ Diệp</a></h3>
+        </div>
+        <div class="carousel-item author-item">
+          <a href="#" class="author-avatar">
+            <img src="images/f34d11dd938c514b84d32e90440fe97545e56a88.png" alt="Timothy Corrigan">
+          </a>
+          <h3 class="author-name"><a href="#">Timothy Corrigan</a></h3>
+        </div>
+        <div class="carousel-item author-item">
+          <a href="#" class="author-avatar">
+            <img src="images/b1f0b6da31ef5824c732120fb7051fa13010740b.png" alt="Wu Ming-Yi">
+          </a>
+          <h3 class="author-name"><a href="#">Wu Ming-Yi</a></h3>
+        </div>
+        <div class="carousel-item author-item">
+          <a href="#" class="author-avatar">
+            <img src="images/c5b133ec404ade1cd8ca1f9ef99d47d439f9840c.png" alt="Maxime Péroz">
+          </a>
+          <h3 class="author-name"><a href="#">Maxime Péroz</a></h3>
+        </div>
+        <div class="carousel-item author-item">
+          <a href="#" class="author-avatar">
+            <img src="images/db1549ae4e23f81454285619fc5e656ccaa28fc1.png" alt="James West">
+          </a>
+          <h3 class="author-name"><a href="#">James West</a></h3>
+        </div>
+      </div>
+      <button class="carousel-nav prev" aria-label="Previous slide"><img src="images/3_1271.svg" alt="Previous"></button>
+      <button class="carousel-nav next" aria-label="Next slide"><img src="images/3_1276.svg" alt="Next" style="transform: rotate(180deg);"></button>
+    </div>
+  </div>
+</section>
+<section id="new-books" class="new-books-section">
+  <div class="container">
+    <div class="section-title-container">
+      <h2 class="section-title">Sách mới</h2>
+      <a href="#" class="view-more-link">Xem thêm <img src="images/3_1290.svg" alt="arrow icon"></a>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/f453d887d9a36ebe203164d508a9c22fc2fadb53.png" alt="NHỮNG ĐỨA CON CỦA NỬA ĐÊM">
+          </a>
+          <h3 class="book-title"><a href="#">NHỮNG ĐỨA CON CỦA NỬA ĐÊM</a></h3>
+          <div class="book-price">
+            <span class="current-price">204.000₫</span>
+            <span class="original-price">240.000₫</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/ef68c55f121053b4e23fc826faea10258c960d8d.png" alt="TRƯỚC KHI CHÚNG TA TỪ BỎ ĐAM MÊ">
+          </a>
+          <h3 class="book-title"><a href="#">TRƯỚC KHI CHÚNG TA TỪ BỎ ĐAM MÊ</a></h3>
+          <div class="book-price">
+            <span class="current-price">110.500₫</span>
+            <span class="original-price">130.000₫</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/32afccdaf72780a2458da129f2ff9698dbbe3eb5.png" alt="VĂN HÓA TÍNH DỤC Ở VIỆT NAM">
+          </a>
+          <h3 class="book-title"><a href="#">VĂN HÓA TÍNH DỤC Ở VIỆT NAM</a></h3>
+          <div class="book-price">
+            <span class="current-price">228.650₫</span>
+            <span class="original-price">269.000₫</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/c48262f03f17e364c4cad53ef9a6db58e45d2d51.png" alt="THỜI ĐẠI TRĂM TUỔI">
+          </a>
+          <h3 class="book-title"><a href="#">THỜI ĐẠI TRĂM TUỔI</a></h3>
+          <div class="book-price">
+            <span class="current-price">127.500₫</span>
+            <span class="original-price">150.000₫</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/f3f74fe6dfad485e61cb71536b60cabb9c651673.png" alt="MARIA BEETLE - SÁT THỦ ĐỐI ĐẦU">
+          </a>
+          <h3 class="book-title"><a href="#">MARIA BEETLE - SÁT THỦ ĐỐI ĐẦU</a></h3>
+          <div class="book-price">
+            <span class="current-price">211.650₫</span>
+            <span class="original-price">249.000₫</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-nav prev" aria-label="Previous slide"><img src="images/3_1372.svg" alt="Previous"></button>
+      <button class="carousel-nav next" aria-label="Next slide"><img src="images/3_1377.svg" alt="Next" style="transform: rotate(180deg);"></button>
+    </div>
+  </div>
+</section>
+<section id="about" class="about-section">
+  <div class="container about-container">
+    <div class="about-content">
+      <h2 class="about-title">Shoppe</h2>
+      <p class="about-subtitle">Bởi vì sách là thế giới</p>
+      <p class="about-description">Shoppe, tên đầy đủ là Công ty Cổ phần Văn hóa và Truyền thông Shoppe, gia nhập thị trường sách Việt Nam vào tháng 2 năm 2005. Ngay từ cuốn sách đầu tiên, độc giả đã dành sự quan tâm và yêu mến cho một thương hiệu sách mới mẻ mang trong mình khát vọng góp phần tạo lập diện mạo mới cho xuất bản văn học tại Việt Nam.</p>
+      <a href="#" class="about-button">Xem thêm</a>
+    </div>
+    <div class="about-image">
+      <img src="images/af2fc52c436d83ab37715284705f71f347370054.png" alt="Shoppe Bookstore">
+    </div>
+  </div>
+</section>
+<section id="coming-soon" class="coming-soon-section">
+  <div class="container">
+    <div class="section-title-container">
+      <h2 class="section-title">Sắp xuất bản</h2>
+      <a href="#" class="view-more-link">Xem thêm <img src="images/3_1406.svg" alt="arrow icon"></a>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/78174138f2b966e9e0ed973778bb5e94169cfcb7.png" alt="MÃI ĐỪNG XA TÔI">
+          </a>
+          <h3 class="book-title"><a href="#">MÃI ĐỪNG XA TÔI</a></h3>
+          <div class="book-price">
+            <span class="current-price">135.150₫</span>
+            <span class="original-price">159.000₫</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/34d4bc44fa0b8ed31f6aaf88c5e602cd5445bc00.png" alt="CỎ CÂY HOA LÁ">
+          </a>
+          <h3 class="book-title"><a href="#">CỎ CÂY HOA LÁ</a></h3>
+          <div class="book-price">
+            <span class="current-price">202.300₫</span>
+            <span class="original-price">238.000₫</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/74c7b53263d28604e084c74106d1c4acd6826696.png" alt="CHẾT CHƯA PHẢI LÀ HẾT">
+          </a>
+          <h3 class="book-title"><a href="#">CHẾT CHƯA PHẢI LÀ HẾT</a></h3>
+          <div class="book-price">
+            <span class="current-price contact-price">Liên hệ</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/b3a07e1ee269b0973d231574cd8b1274e030fb7c.png" alt="THẾ GIỚI RẤT HUYÊN NÁO, LÀ CHÍNH MÌNH ĐƯỢC RỒI">
+          </a>
+          <h3 class="book-title"><a href="#">THẾ GIỚI RẤT HUYÊN NÁO, LÀ CHÍNH MÌNH ĐƯỢC RỒI</a></h3>
+          <div class="book-price">
+            <span class="current-price">134.300₫</span>
+            <span class="original-price">158.000₫</span>
+          </div>
+        </div>
+        <div class="carousel-item book-card">
+          <a href="#" class="book-cover">
+            <img src="images/92439894d0f5d66e590ec63af2697d240e9f1bec.png" alt="NGUYÊN TẮC LẬP QUỐC">
+          </a>
+          <h3 class="book-title"><a href="#">NGUYÊN TẮC LẬP QUỐC</a></h3>
+          <div class="book-price">
+            <span class="current-price contact-price">Liên hệ</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-nav prev" aria-label="Previous slide"><img src="images/3_1484.svg" alt="Previous"></button>
+      <button class="carousel-nav next" aria-label="Next slide"><img src="images/3_1489.svg" alt="Next" style="transform: rotate(180deg);"></button>
+    </div>
+  </div>
+</section>
+<section id="press" class="press-section">
+  <div class="container">
+    <div class="section-title-container">
+      <h2 class="section-title">Sách Shoppe trên báo chí</h2>
+      <a href="#" class="view-more-link">Xem thêm <img src="images/3_1503.svg" alt="arrow icon"></a>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <article class="carousel-item press-article">
+          <a href="#"><img src="images/030ef12852168c223ba697435012a028efa106a9.png" alt="Article image 1"></a>
+          <div class="press-article-content">
+            <h3><a href="#">"Thương hoài ngàn năm" của Võ Phiến trở lại sau nửa thế kỷ</a></h3>
+            <p>Sau hơn nửa thế kỷ mới trở lại với đông đảo độc giả, tập truyện ngắn ‘Thương hoài ngàn năm’...</p>
+            <time datetime="2024-10-28">Thứ Hai, 28/10/2024</time>
+          </div>
+        </article>
+        <article class="carousel-item press-article">
+          <a href="#"><img src="images/1165e1c105926f407933caff688c57fd55488734.png" alt="Article image 2"></a>
+          <div class="press-article-content">
+            <h3><a href="#">Carrie và nghịch lí hư cấu của Stephen King</a></h3>
+            <p>Ra mắt đúng nửa thế kỉ từ năm 1974 nhưng cho đến nay Carrie: Vũ hội đẫm máu - tác phẩm đầu tay...</p>
+            <time datetime="2024-10-28">Thứ Hai, 28/10/2024</time>
+          </div>
+        </article>
+        <article class="carousel-item press-article">
+          <a href="#"><img src="images/c5f9fc087d24c42e4d78b4f3f54f343e3009966b.png" alt="Article image 3"></a>
+          <div class="press-article-content">
+            <h3><a href="#">Nobel văn chương 2024 chính thức gọi tên nhà văn Hàn Quốc Han Kang</a></h3>
+            <p>Nobel Văn chương 2024 đã chính thức gọi tên nhà văn Hàn Quốc Han Kang vì “thứ văn xuôi mãnh...</p>
+            <time datetime="2024-10-11">Thứ Sáu, 11/10/2024</time>
+          </div>
+        </article>
+      </div>
+      <button class="carousel-nav prev" aria-label="Previous slide"><img src="images/3_1549.svg" alt="Previous"></button>
+      <button class="carousel-nav next" aria-label="Next slide"><img src="images/3_1554.svg" alt="Next" style="transform: rotate(180deg);"></button>
+    </div>
+  </div>
+</section>
+<section id="partners" class="partners-section">
+  <div class="container">
+    <div class="section-title-container">
+      <h2 class="section-title">Các đối tác</h2>
+      <a href="#" class="view-more-link">Xem thêm <img src="images/3_1568.svg" alt="arrow icon"></a>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-item partner-item">
+          <a href="#" class="partner-logo">
+            <img src="images/d5d4eda069000d65fa3dd5cee3544b90fb202ac1.png" alt="Simon and Schuster">
+          </a>
+          <h3 class="partner-name"><a href="#">Simon and Schuster</a></h3>
+        </div>
+        <div class="carousel-item partner-item">
+          <a href="#" class="partner-logo">
+            <img src="images/1ca3f0c7fc5ec8f3b5f50e5f32c80c7cac1c393d.png" alt="Pop Up Projects">
+          </a>
+          <h3 class="partner-name"><a href="#">Pop Up Projects</a></h3>
+        </div>
+        <div class="carousel-item partner-item">
+          <a href="#" class="partner-logo">
+            <img src="images/5e9298e87f0877cdaed79873fd24c5b69d98dec1.png" alt="HarperCollins Publishers">
+          </a>
+          <h3 class="partner-name"><a href="#">HarperCollins Publishers</a></h3>
+        </div>
+        <div class="carousel-item partner-item">
+          <a href="#" class="partner-logo">
+            <img src="images/23ceda26452fb85abcfa2baf51d69780d5c1313c.png" alt="Viện Goethe Hà Nội">
+          </a>
+          <h3 class="partner-name"><a href="#">Viện Goethe Hà Nội</a></h3>
+        </div>
+        <div class="carousel-item partner-item">
+          <a href="#" class="partner-logo">
+            <img src="images/057c25dd4d34acf48250de188ee26bc5dc9f6d5e.png" alt="Lotte Department Store Vietnam">
+          </a>
+          <h3 class="partner-name"><a href="#">Lotte Department Store Vietnam</a></h3>
+        </div>
+        <div class="carousel-item partner-item">
+          <a href="#" class="partner-logo">
+            <img src="images/abfd92c5496e531f2cc22f6bf6ecc76760e52495.png" alt="Penguin Random House">
+          </a>
+          <h3 class="partner-name"><a href="#">Penguin Random House</a></h3>
+        </div>
+      </div>
+      <button class="carousel-nav prev" aria-label="Previous slide"><img src="images/3_1657.svg" alt="Previous"></button>
+      <button class="carousel-nav next" aria-label="Next slide"><img src="images/3_1662.svg" alt="Next" style="transform: rotate(180deg);"></button>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-newsletter">
+    <div class="container newsletter-container">
+      <div class="social-links">
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/0088b23e0db8c0a91b592f0127bd4614bd5c3c3b.png" alt="Facebook">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/026a1effd7b959e1a9369808c71ea618ee84669b.png" alt="Instagram">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/6898bbeccda7bdef3750c75677d9364cf308a235.png" alt="Lazada">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/96d35df635f4a268c9138ea07bc6ada94f569a79.png" alt="Shopee">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/253daa23689490678d891b78b35f1f0853773703.png" alt="Tiktok">
+        </a>
+      </div>
+      <div class="newsletter-signup">
+        <h4>Nhận thông tin khuyến mãi từ chúng tôi</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Nhận email ưu đãi">
+          <button type="submit">Đăng kí</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="container footer-main-container">
+      <div class="footer-column">
+        <a href="#"><img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Logo" class="footer-logo"></a>
+        <ul class="contact-info">
+          <li><img src="images/3_1043.svg" alt="location icon">Số 59, Đỗ Quang, Trung Hoà, Cầu Giấy, Hà Nội.</li>
+          <li><img src="images/3_1051.svg" alt="email icon"><a href="mailto:info@shopee.vn">info@shopee.vn</a></li>
+          <li><img src="images/3_1061.svg" alt="phone icon"><a href="tel:02435146876">02435146876</a></li>
+          <li><img src="images/3_1068.svg" alt="mobile icon"><a href="tel:02435146875">02435146875</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Giới thiệu</h4>
+        <ul class="footer-links">
+          <li><a href="#">Về Shopee</a></li>
+          <li><a href="#">Hệ thống hiệu sách</a></li>
+          <li><a href="#">Hệ thống phát hành</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">CHÍNH SÁCH</h4>
+        <ul class="footer-links">
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/ vận chuyển</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Phương thức thanh toán</h4>
+        <img src="images/a3dbcaa3f38663a58fd8852aee66a94a1f6d4e4c.png" alt="Payment Methods" class="payment-methods">
+        <a href="#"><img src="images/c2c60003f2bed57f44ff8a371e0f6ae7c7ab633b.png" alt="Bộ Công Thương" class="bocongthuong-img"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
