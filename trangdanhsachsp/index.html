@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang danh sách sp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  height: 90px;
+  border-bottom: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.logo img {
+  width: 64px;
+  height: 62px;
+}
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+}
+.main-nav a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.main-nav a .fas {
+  font-size: 12px;
+  color: #7b7b7d;
+}
+.main-nav a.active {
+  color: var(--primary-color);
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  overflow: hidden;
+  height: 40px;
+}
+.search-form input {
+  border: none;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #9e9e9e;
+  width: 170px;
+  outline: none;
+}
+.search-form button {
+  padding: 0 10px;
+  height: 100%;
+}
+.action-icon {
+  position: relative;
+}
+.cart-icon .cart-count {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 6px;
+  padding: 1px 6px;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    display: none; /* Simple hide for smaller screens, would need JS for hamburger */
+  }
+}
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .search-form input {
+    width: 100%;
+  }
+  .site-header {
+    height: auto;
+    padding: 15px 0;
+  }
+}
+
+/* CSS for section section:main */
+.main-content {
+  padding-bottom: 60px;
+}
+.breadcrumb-nav {
+  background-color: #f7f7f7;
+  padding: 15px 0;
+  margin-bottom: 40px;
+}
+.breadcrumb-nav ol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.breadcrumb-nav a {
+  color: var(--text-dark);
+}
+.breadcrumb-nav .fa-chevron-right {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+.breadcrumb-nav span {
+  color: var(--primary-color);
+}
+.main-banner {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.shop-layout {
+  display: flex;
+  gap: 30px;
+}
+.filter-sidebar {
+  flex: 0 0 250px;
+}
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+.filter-list li {
+  margin-bottom: 15px;
+}
+.filter-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+.custom-checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-color);
+  background-color: var(--white);
+  margin-right: 15px;
+}
+.filter-list input:checked + .custom-checkbox {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.products-section {
+  flex: 1;
+}
+.sorting-bar {
+  background-color: var(--background-light);
+  padding: 14px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.sorting-bar span {
+  color: #2e3a59;
+}
+.sort-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sort-options a {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #2e3a59;
+}
+.sort-options a.active {
+  background-color: #7b7b7d;
+  color: var(--white);
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 20px;
+  margin-bottom: 50px;
+}
+.product-card {
+  text-align: center;
+}
+.product-image-link {
+  display: block;
+  margin-bottom: 15px;
+}
+.product-card img {
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+}
+.product-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.25;
+  height: 40px; /* 2 lines */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.price-new {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.price-old {
+  font-size: 14px;
+  color: var(--text-light);
+}
+.price-contact {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+.pagination a.active {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .shop-layout {
+    flex-direction: column;
+  }
+  .filter-sidebar {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sorting-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS for section section:footer */
+.site-footer {
+  background-color: var(--white);
+}
+.footer-top {
+  background-color: var(--primary-color);
+  padding: 21px 0;
+}
+.footer-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+.social-icon {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+.social-icon::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.social-icon img {
+  width: 100%;
+  height: 100%;
+}
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.newsletter h4 {
+  color: var(--white);
+  font-size: 15.75px;
+  font-weight: 700;
+}
+.newsletter-form {
+  display: flex;
+  height: 38px;
+}
+.newsletter-form input {
+  width: 260px;
+  border: 1px solid var(--border-light);
+  border-radius: 3px 0 0 3px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #6c757d;
+  outline: none;
+}
+.newsletter-form button {
+  background-color: var(--text-dark);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 16px;
+  border-radius: 0 3px 3px 0;
+}
+.footer-bottom {
+  padding: 60px 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-logo img {
+  width: 64px;
+}
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.contact-info img {
+  margin-top: 3px;
+}
+.footer-title {
+  font-size: 15.75px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.footer-links li {
+  margin-bottom: 16px;
+}
+.footer-links a {
+  font-size: 14px;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+.payment-methods {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-top-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-logo, .contact-info li {
+    justify-content: center;
+  }
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter-form {
+    width: 100%;
+  }
+  .newsletter-form input {
+    width: 100%;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-container">
+    <a href="#" class="logo">
+      <img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Tin Sách <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#" class="active">Sách Shoppe <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#">Tác giả</a></li>
+        <li><a href="#">Cuộc Thi <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="#">Về Shoppe</a></li>
+        <li><a href="#">Liên hệ <i class="fas fa-chevron-down"></i></a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form">
+        <input type="search" placeholder="Tìm kiếm...">
+        <button type="submit" aria-label="Search">
+          <img src="images/3_2333.svg" alt="Search Icon">
+        </button>
+      </form>
+      <a href="#" class="action-icon" aria-label="Account">
+        <img src="images/3_2338.svg" alt="Account Icon">
+      </a>
+      <!--merged image-->
+      <a href="#" class="action-icon cart-icon" aria-label="Cart">
+        <img src="images/3_2343.svg" alt="Cart Icon">
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="main-content">
+  <nav class="breadcrumb-nav" aria-label="breadcrumb">
+    <div class="container">
+      <ol>
+        <li><a href="#">Trang chủ</a></li>
+        <li><i class="fas fa-chevron-right"></i></li>
+        <li><span aria-current="page">Tất cả sản phẩm</span></li>
+      </ol>
+    </div>
+  </nav>
+
+  <div class="container">
+    <a href="#" class="banner-link">
+      <img src="images/80db6c68ba5031342a25ff7cfa4792ee67013aab.png" alt="Banner" class="main-banner">
+    </a>
+
+    <div class="shop-layout">
+      <aside class="filter-sidebar">
+        <h2 class="sidebar-title">Quốc gia</h2>
+        <ul class="filter-list">
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Việt Nam</label></li>
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Trung Quốc</label></li>
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Nhật Bản</label></li>
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Pháp</label></li>
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Đức</label></li>
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Hàn Quốc</label></li>
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Italy</label></li>
+          <li><label><input type="checkbox" class="visually-hidden"> <span class="custom-checkbox"></span> Mỹ</label></li>
+        </ul>
+      </aside>
+
+      <section class="products-section">
+        <div class="sorting-bar">
+          <span>Sắp xếp theo</span>
+          <ul class="sort-options">
+            <li><a href="#" class="active">Mặc định</a></li>
+            <li><a href="#">Sách mới</a></li>
+            <li><a href="#">Giá thấp - cao</a></li>
+            <li><a href="#">Giá cao - thấp</a></li>
+          </ul>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/a6bb60adcca8da3d2230f411ac69966aecd0737c.png" alt="NỖI ĐAU CỦA CHÀNG WERTHER - BÌA CỨNG">
+            </a>
+            <h3 class="product-title"><a href="#">NỖI ĐAU CỦA CHÀNG WERTHER - BÌA CỨNG</a></h3>
+            <div class="product-price">
+              <span class="price-new">85.000₫</span>
+              <span class="price-old"><del>100.000₫</del></span>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/78174138f2b966e9e0ed973778bb5e94169cfcb7.png" alt="MÃI ĐỪNG XA TÔI">
+            </a>
+            <h3 class="product-title"><a href="#">MÃI ĐỪNG XA TÔI</a></h3>
+            <div class="product-price">
+              <span class="price-new">135.150₫</span>
+              <span class="price-old"><del>159.000₫</del></span>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/9c6e35898b571c8d4dd6a9042844c681251fb36c.png" alt="BÀ NGOẠI THỜI @">
+            </a>
+            <h3 class="product-title"><a href="#">BÀ NGOẠI THỜI @</a></h3>
+            <div class="product-price">
+              <span class="price-new">68.000₫</span>
+              <span class="price-old"><del>80.000₫</del></span>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/f453d887d9a36ebe203164d508a9c22fc2fadb53.png" alt="NHỮNG ĐỨA CON CỦA NỬA ĐÊM">
+            </a>
+            <h3 class="product-title"><a href="#">NHỮNG ĐỨA CON CỦA NỬA ĐÊM</a></h3>
+            <div class="product-price">
+              <span class="price-new">204.000₫</span>
+              <span class="price-old"><del>240.000₫</del></span>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/ef68c55f121053b4e23fc826faea10258c960d8d.png" alt="TRƯỚC KHI CHÚNG TA TỪ BỎ ĐAM MÊ">
+            </a>
+            <h3 class="product-title"><a href="#">TRƯỚC KHI CHÚNG TA TỪ BỎ ĐAM MÊ</a></h3>
+            <div class="product-price">
+              <span class="price-new">110.500₫</span>
+              <span class="price-old"><del>130.000₫</del></span>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/128ddbadfc74bfcb7e8c25ca2686a824d2970d4e.png" alt="CỎ CÂY HOA LÁ">
+            </a>
+            <h3 class="product-title"><a href="#">CỎ CÂY HOA LÁ</a></h3>
+            <div class="product-price">
+              <span class="price-new">202.300₫</span>
+              <span class="price-old"><del>238.000₫</del></span>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/8126372066f241ddfd8b3aa0570cfff4de336431.png" alt="CHẾT CHƯA PHẢI LÀ HẾT">
+            </a>
+            <h3 class="product-title"><a href="#">CHẾT CHƯA PHẢI LÀ HẾT</a></h3>
+            <div class="product-price">
+              <span class="price-contact">Liên hệ</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <a href="#" class="product-image-link">
+              <img src="images/a7c191224663e26328ee743c2b37e9a20b832c10.png" alt="THẾ GIỚI RẤT HUYÊN NÁO, LÀ CHÍNH MÌNH">
+            </a>
+            <h3 class="product-title"><a href="#">THẾ GIỚI RẤT HUYÊN NÁO, LÀ CHÍNH MÌNH</a></h3>
+            <div class="product-price">
+              <span class="price-new">134.300₫</span>
+              <span class="price-old"><del>158.000₫</del></span>
+            </div>
+          </article>
+        </div>
+
+        <nav class="pagination" aria-label="Pagination">
+          <ul>
+            <li><a href="#"><img src="images/3_2646.svg" alt="Previous Page"></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">102</a></li>
+            <li><a href="#"><img src="images/3_2665.svg" alt="Next Page"></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container footer-top-container">
+      <div class="social-links">
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/0088b23e0db8c0a91b592f0127bd4614bd5c3c3b.png" alt="Facebook">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/026a1effd7b959e1a9369808c71ea618ee84669b.png" alt="Instagram">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/6898bbeccda7bdef3750c75677d9364cf308a235.png" alt="Lazada">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/96d35df635f4a268c9138ea07bc6ada94f569a79.png" alt="Shopee">
+        </a>
+        <!--merged image-->
+        <a href="#" class="social-icon">
+          <img src="images/253daa23689490678d891b78b35f1f0853773703.png" alt="Tiktok">
+        </a>
+      </div>
+      <div class="newsletter">
+        <h4>Nhận thông tin khuyến mãi từ chúng tôi</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Nhận email ưu đãi">
+          <button type="submit">Đăng kí</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#" class="footer-logo"><img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Shopee Logo"></a>
+        <ul class="contact-info">
+          <li><img src="images/3_2377.svg" alt="Location"><span>Số 59, Đỗ Quang, Trung Hoà, Cầu Giấy, Hà Nội.</span></li>
+          <li><img src="images/3_2384.svg" alt="Email"><a href="mailto:info@shopee.vn">info@shopee.vn</a></li>
+          <li><img src="images/3_2394.svg" alt="Phone"><a href="tel:02435146876">02435146876</a></li>
+          <li><img src="images/3_2401.svg" alt="Mobile"><a href="tel:02435146875">02435146875</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Giới thiệu</h4>
+        <ul class="footer-links">
+          <li><a href="#">Về Shopee</a></li>
+          <li><a href="#">Hệ thống hiệu sách</a></li>
+          <li><a href="#">Hệ thống phát hành</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">CHÍNH SÁCH</h4>
+        <ul class="footer-links">
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/ vận chuyển</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Phương thức thanh toán</h4>
+        <img src="images/a3dbcaa3f38663a58fd8852aee66a94a1f6d4e4c.png" alt="Payment Methods" class="payment-methods">
+        <a href="#"><img src="images/c2c60003f2bed57f44ff8a371e0f6ae7c7ab633b.png" alt="Bộ Công Thương" class="bocongthuong-img"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+@block-end footer
+</body>
+</html>
