@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giỏ hàng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header-wrapper {
+  border-bottom: 1px solid var(--primary-color);
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+.logo img {
+  width: 64px;
+  height: 62px;
+  display: block;
+}
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.main-nav a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  height: 88px;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bbbbbf;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 40px;
+}
+.search-form input {
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 14px;
+  color: var(--text-placeholder);
+  width: 170px;
+  background: transparent;
+}
+.search-form button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-form button img {
+  width: 24px;
+  height: 24px;
+}
+.action-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-icon img {
+  width: 24px;
+  height: 24px;
+}
+.cart-icon .cart-count {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  background-color: var(--primary-color);
+  color: var(--background-light);
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 6px;
+  min-width: 19px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 5px;
+}
+@media (max-width: 1200px) {
+  .main-nav {
+    display: none; /* Simple hide for tablet, would need JS for hamburger */
+  }
+}
+@media (max-width: 768px) {
+  .site-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .search-form {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .search-form input {
+    width: 100%;
+  }
+}
+
+/* CSS for section section:cart */
+.breadcrumbs-wrapper {
+  background-color: #f8f8f8;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.breadcrumbs-list a {
+  color: var(--text-medium);
+}
+.breadcrumbs-list strong {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+.cart-content {
+  padding-top: 75px;
+  padding-bottom: 85px;
+}
+.cart-title {
+  font-size: 29px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.empty-cart-container {
+  border: 1px solid var(--border-color);
+  min-height: 159px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.empty-cart-icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 22px;
+}
+.empty-cart-message {
+  font-size: 16px;
+  color: #212529;
+  text-align: center;
+}
+
+/* CSS for section section:footer */
+.site-footer {
+  background-color: var(--background-light);
+}
+.footer-newsletter {
+  background-color: var(--primary-color);
+  padding: 21px 0;
+}
+.footer-newsletter-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.social-icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newsletter-signup {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.newsletter-signup p {
+  color: var(--background-light);
+  font-weight: 700;
+  font-size: 15.75px;
+}
+.newsletter-form {
+  display: flex;
+  height: 38px;
+}
+.newsletter-form input {
+  width: 260px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px 0 0 3px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: var(--text-placeholder);
+  outline: none;
+}
+.newsletter-form button {
+  background-color: #333333;
+  color: var(--background-light);
+  border: none;
+  border-radius: 0 3px 3px 0;
+  padding: 0 16px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer-main {
+  padding: 45px 0;
+}
+.footer-main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.footer-column .footer-logo {
+  width: 64px;
+  height: 62px;
+  margin-bottom: 16px;
+}
+.footer-column h4 {
+  font-size: 15.75px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 45px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-info li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+.contact-info img {
+  width: 20px;
+  margin-top: 3px;
+}
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.footer-column ul a {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.payment-methods {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.bocongthuong-seal {
+  max-width: 158px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .footer-newsletter-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newsletter-signup {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .footer-main-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-main-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer-column h4 {
+    margin-bottom: 20px;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header-wrapper">
+  <div class="site-header container">
+    <a href="#" class="logo">
+      <img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Logo">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#" class="icon-dropdown">Tin Sách</a></li>
+        <li><a href="#" class="icon-dropdown">Sách Shoppe</a></li>
+        <li><a href="#">Tác giả</a></li>
+        <li><a href="#" class="icon-dropdown">Cuộc Thi</a></li>
+        <li><a href="#">Về Shoppe</a></li>
+        <li><a href="#" class="icon-dropdown">Liên hệ</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button type="submit" aria-label="Search">
+          <img src="images/3_2151.svg" alt="Search Icon">
+        </button>
+      </form>
+      <a href="#" class="action-icon" aria-label="Account">
+        <img src="images/3_2156.svg" alt="Account Icon">
+      </a>
+      <a href="#" class="action-icon cart-icon" aria-label="Cart">
+        <img src="images/3_2161.svg" alt="Cart Icon">
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+<section id="cart-section" class="cart-section">
+  <div class="breadcrumbs-wrapper">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumbs-list">
+          <li><a href="#">Trang chủ</a></li>
+          <li class="icon-arrow-right" aria-current="page"><strong>Giỏ hàng</strong></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <main class="cart-content container">
+    <h1 class="cart-title">Giỏ hàng của bạn</h1>
+    <div class="empty-cart-container">
+      <!--merged image-->
+      <div class="empty-cart-icon">
+        <img src="images/3_2181.svg" alt="empty cart illustration piece" style="position: absolute; top: 0.00px; left: 30.43px; width: 21.00px; height: 11.43px;">
+        <img src="images/3_2184.svg" alt="empty cart illustration piece" style="position: absolute; top: 17.63px; left: 8.81px; width: 62.37px; height: 9.49px;">
+        <img src="images/3_2187.svg" alt="empty cart illustration piece" style="position: absolute; top: 7.60px; left: 41.85px; width: 22.59px; height: 19.00px;">
+        <img src="images/3_2190.svg" alt="empty cart illustration piece" style="position: absolute; top: 4.12px; left: 14.10px; width: 26.63px; height: 22.82px;">
+        <img src="images/3_2193.svg" alt="empty cart illustration piece" style="position: absolute; top: 13.02px; left: 24.23px; width: 27.25px; height: 13.90px;">
+        <img src="images/3_2196.svg" alt="empty cart illustration piece" style="position: absolute; top: 24.41px; left: 6.10px; width: 67.80px; height: 55.59px;">
+        <img src="images/3_2199.svg" alt="empty cart illustration piece" style="position: absolute; top: 29.83px; left: 46.10px; width: 8.14px; height: 8.14px;">
+        <img src="images/3_2202.svg" alt="empty cart illustration piece" style="position: absolute; top: 29.83px; left: 25.76px; width: 8.14px; height: 8.14px;">
+        <img src="images/3_2205.svg" alt="empty cart illustration piece" style="position: absolute; top: 33.90px; left: 28.47px; width: 23.05px; height: 20.34px;">
+      </div>
+      <p class="empty-cart-message">Không có sản phẩm nào trong giỏ hàng của bạn</p>
+    </div>
+  </main>
+</section>
+<footer class="site-footer">
+  <div class="footer-newsletter">
+    <div class="container footer-newsletter-content">
+      <div class="social-links">
+        <a href="#" class="social-icon" aria-label="Facebook"><img src="images/0088b23e0db8c0a91b592f0127bd4614bd5c3c3b.png" alt="Facebook"></a>
+        <a href="#" class="social-icon" aria-label="Instagram"><img src="images/026a1effd7b959e1a9369808c71ea618ee84669b.png" alt="Instagram"></a>
+        <a href="#" class="social-icon" aria-label="Lazada"><img src="images/6898bbeccda7bdef3750c75677d9364cf308a235.png" alt="Lazada"></a>
+        <a href="#" class="social-icon" aria-label="Shopee"><img src="images/96d35df635f4a268c9138ea07bc6ada94f569a79.png" alt="Shopee"></a>
+        <a href="#" class="social-icon" aria-label="Tiktok"><img src="images/253daa23689490678d891b78b35f1f0853773703.png" alt="Tiktok"></a>
+      </div>
+      <div class="newsletter-signup">
+        <p>Nhận thông tin khuyến mãi từ chúng tôi</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Nhận email ưu đãi">
+          <button type="submit">Đăng kí</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="container footer-main-content">
+      <div class="footer-column">
+        <a href="#"><img src="images/0d2d17184b83b7d0526324acdeba6f68ba0a9817.png" alt="Logo" class="footer-logo"></a>
+        <ul class="contact-info">
+          <li><img src="images/3_2238.svg" alt="location icon"><span>Số 59, Đỗ Quang, Trung Hoà, Cầu Giấy,<br>Hà Nội.</span></li>
+          <li><img src="images/3_2245.svg" alt="email icon"><a href="mailto:info@shopee.vn">info@shopee .vn</a></li>
+          <li><img src="images/3_2255.svg" alt="phone icon"><a href="tel:02435146876">02435146876</a></li>
+          <li><img src="images/3_2262.svg" alt="mobile icon"><a href="tel:02435146875">02435146875</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Giới thiệu</h4>
+        <ul>
+          <li><a href="#">Về Shopee</a></li>
+          <li><a href="#">Hệ thống hiệu sách</a></li>
+          <li><a href="#">Hệ thống phát hành</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ với chúng tôi</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách đổi trả/hoàn tiền</a></li>
+          <li><a href="#">Chính sách thanh toán/ vận chuyển</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Phương thức thanh toán</h4>
+        <img src="images/a3dbcaa3f38663a58fd8852aee66a94a1f6d4e4c.png" alt="Payment Methods" class="payment-methods">
+        <a href="#"><img src="images/c2c60003f2bed57f44ff8a371e0f6ae7c7ab633b.png" alt="Bộ Công Thương" class="bocongthuong-seal"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
