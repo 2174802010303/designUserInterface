@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #ee4d2d;
+  --secondary-color: #228b22;
+  --text-color: #333333;
+  --dark-text: #151515;
+  --light-gray: #f7f7f7;
+  --border-color: #bbbbbf;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Font Awesome Fallback */
+.icon {
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+}
