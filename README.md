@@ -40,8 +40,8 @@ Nguyễn Tấn Duy
 | Topic Selection    | ✅ Completed    |
 | UI Analysis        | ✅ Completed    |
 | Wireframing        | ✅ Completed    |
-| HTML/CSS Prototype | 🔄 In Progress |
-| Final Submission   | ⏳ Coming Soon  |
+| HTML/CSS Prototype | ✅ Complete |
+| Final Submission   | ✅ Complete  |
 
 💡 Lessons Learned
 Applying design thinking and user-centered design.
